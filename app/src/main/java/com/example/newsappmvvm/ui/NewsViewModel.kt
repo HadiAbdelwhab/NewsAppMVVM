@@ -100,7 +100,7 @@ class NewsViewModel(
 
 
     private suspend fun safeSearchNewsCall(searchQuery: String) {
-        //newSearchQuery = searchQuery
+
         searchNewsLivaData.postValue(Resource.Loading())
         try {
             if(isConnected()) {
